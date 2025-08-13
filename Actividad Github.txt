@@ -1,0 +1,78 @@
+Teniendo en cuenta el material presentado en esta unidad, te invitamos a resolver estos ejercicios practicos
+ 
+    1. Instalar y configurar Git definiendo el nombre del usuario, el email y activar los colores de la salida. mostrar la configuración final.
+    
+	Configuración de usuario:
+		git config --global user.name fergeo
+	
+	Configuración de email:
+		git config --global user.email fergeo@yahoo.com
+	
+	Configuración de colores:
+		git config --global color.ui auto
+	
+	Mostrar la configuración final:
+		git config --list
+	
+	
+	2. Crear un repositorio nuevo con el nombre AprendiendoGit y mostrar su contenido.
+	
+	mkdir AprendiendoGit
+	cd AprendiendoGit
+	
+	git init
+	
+	Mostrar su contenido:
+	ls -a
+	
+    
+	3. Crear un archivo de texto llamado Readme.md e ingresarle el texto "Git Fundamentos"
+	
+	echo "Git Fundamentos" > Readme.md
+    
+	4. Comprobar de nuevo el estado del repositorio.
+	
+	ls -a 
+	git status
+    
+	5. Añadir el fichero a la zona de intercambio temporal.
+	
+	git add .
+    
+	6. Volver a comprobar una vez más el estado del repositorio.
+	
+	git status
+    
+	7. Abrir el repositorio con visual Studio Code 
+	
+	code .
+    
+	8. Agregar la fecha actual al archivo Readme.md y realizar un commit con el mensaje “Fecha”
+    
+	echo "$(date)" >> Readme.md
+	
+	9. Agregar un archivo “index.html” con el contenido “Introduccion a GIT “ en encabezado y con formato html
+    
+	10. Mostrar todos los cambios en el repositorio
+	
+	Volver a ver estado:
+	git status
+	
+	git add .
+	
+	git commit -m "Commit de Readme.md y index.html"
+
+Tienen que entregar en la actividad los comandos de git 
+que ejecutaron para realizar la actividad, 
+ademas pueden invitarme al repositorio(usuario: javierblancoedu) 
+si lo subieron a github y tambien capturas de pantalla si lo consideran necesario.
+
+Conectar eñ repositorio local con el remoto:
+git remote add origin https://github.com/fergeo/AprendiendoGit.git
+
+Verificar que se agrego el remoto:
+git remote -v
+
+Subir el repositorio al remoto
+git push -u origin master
+
