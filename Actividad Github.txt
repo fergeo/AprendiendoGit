@@ -61,6 +61,8 @@ Teniendo en cuenta el material presentado en esta unidad, te invitamos a resolve
 	git add .
 	
 	git commit -m "Commit de Readme.md y index.html"
+	
+	git push
 
 Tienen que entregar en la actividad los comandos de git 
 que ejecutaron para realizar la actividad, 
